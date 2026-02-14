@@ -3,79 +3,318 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mahavir Skoda – UI/UX Case Study</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahavir Skoda – UI/UX Case Study</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="page-loader">
-        <div class="loader-text">Loading</div>
-    </div>
+    <!-- HERO -->
+    <section class="case-hero">
+        <div class="case-container">
 
-    <section class="project-detail-hero">
-        <div class="project-detail-wrapper">
-            <p class="project-category">Website Re-Design</p>
+            <a href="index.html#projects" class="back-btn" style="position:absolute;left:30px;top:30px;">
+                ← Back to Portfolio
+            </a>
+
             <h1>Mahavir Skoda</h1>
-            <p class="project-intro">
-                A full-scale redesign of the Mahavir Skoda dealership website aimed at
-                improving usability, visual hierarchy, and lead conversion performance.
+            <p>
+                Complete Website Redesign for an authorized Skoda dealership
+                focused on increasing test-drive bookings and improving vehicle discovery.
             </p>
-        </div>
-    </section>
 
-    <section class="project-detail-image">
-        <img src="images/project2.jpg" alt="Mahavir Skoda Preview">
-    </section>
-
-    <section class="project-detail-content">
-        <div class="detail-grid">
-
-            <div>
-                <h3>Problem</h3>
-                <p>
-                    The existing website lacked clarity in navigation, modern aesthetics,
-                    and an intuitive vehicle discovery experience.
-                </p>
-            </div>
-
-            <div>
-                <h3>Solution</h3>
-                <p>
-                    Redesigned the interface with structured vehicle categorization,
-                    improved CTA placement, and responsive layouts.
-                </p>
-            </div>
-
-            <div>
-                <h3>My Role</h3>
-                <p>UX Audit, Wireframing, High-Fidelity UI Design, Prototyping.</p>
-            </div>
-
-            <div>
-                <h3>Impact</h3>
-                <ul>
-                    <li>Improved lead form usability</li>
-                    <li>Enhanced mobile browsing experience</li>
-                    <li>Modernized visual identity</li>
-                    <li>Optimized conversion flow</li>
-                </ul>
+            <div class="case-meta">
+                <div class="meta-item">
+                    <h4>Role</h4>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Duration</h4>
+                    <p>4–6 Weeks</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Platform</h4>
+                    <p>Responsive Website</p>
+                </div>
+                <div class="meta-item">
+                    <h4>Industry</h4>
+                    <p>Automotive</p>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <section class="project-detail-cta">
-        <a href="https://www.figma.com/proto/34Bswpt6orA4cf8rDmnnuk/Mahavir-skoda" target="_blank" class="project-btn">
-            View Full Prototype
-        </a>
-
-        <br><br>
-        <a href="index.html#projects" class="back-btn">← Back to Portfolio</a>
+    <!-- HERO MOCKUP -->
+    <section class="case-image large-image">
+        <div class="case-container">
+            <img src="images/skoda-hero-mockup.jpg" alt="Mahavir Skoda Redesign">
+        </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- OVERVIEW WITH SIDE IMAGE -->
+    <section class="case-section">
+        <div class="case-container case-grid">
+
+            <div class="text">
+                <h2>Project Overview</h2>
+                <p>
+                    Mahavir Skoda is an authorized automobile dealership.
+                    The existing website lacked clarity in navigation and
+                    was not optimized for lead generation.
+                </p>
+                <p>
+                    The goal was to transform it into a modern,
+                    conversion-focused digital showroom.
+                </p>
+            </div>
+
+            <div class="image">
+                <img src="images/skoda-before-home.png" alt="Before Homepage">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BEFORE VS AFTER -->
+    <section class="case-section alt-bg">
+        <div class="case-container">
+            <h2 class="section-title">Before vs After</h2>
+
+            <div class="compare-wrapper">
+
+                <!-- BEFORE -->
+                <div class="compare-card">
+                    <h4>Before</h4>
+
+                    <div class="image-ratio">
+                        <img src="images/skoda-before-home.png" alt="Old Design">
+                    </div>
+
+                    <ul>
+                        <li>Flat navigation</li>
+                        <li>Weak CTAs</li>
+                        <li>Poor mobile layout</li>
+                    </ul>
+                </div>
+
+                <!-- AFTER -->
+                <div class="compare-card">
+                    <h4>After</h4>
+
+                    <div class="image-ratio">
+                        <img src="images/skoda-after-model.jpg" alt="New Design">
+                    </div>
+
+                    <ul>
+                        <li>Structured categories</li>
+                        <li>Sticky Test Drive CTA</li>
+                        <li>Optimized lead forms</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- RESEARCH + INSIGHTS -->
+    <section class="case-section research-section">
+        <div class="case-container">
+
+            <div class="section-header">
+                <h2>Research & Insights</h2>
+                <p class="section-subtitle">
+                    Understanding user behavior and business gaps through audit,
+                    competitor benchmarking and interviews.
+                </p>
+            </div>
+
+            <div class="insight-grid">
+
+                <div class="insight-card">
+                    <div class="icon-wrap">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>UX Audit</h4>
+                    <p>Navigation hierarchy was unclear and CTAs lacked visibility.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="icon-wrap">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4>User Feedback</h4>
+                    <p>Users struggled to find models and found forms too lengthy.</p>
+                </div>
+
+                <div class="insight-card">
+                    <div class="icon-wrap">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h4>Competitor Analysis</h4>
+                    <p>Top-performing dealerships prioritized clear booking flows and bold hero visuals.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- WIREFRAMES -->
+    <section class="case-section">
+        <div class="case-container">
+
+            <h2>Wireframes → High Fidelity</h2>
+
+            <div class="case-gallery">
+                <img src="images/skoda-wireframe.png" alt="Wireframe">
+                <img src="images/skoda-after-model.jpg" alt="Final UI">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- RESPONSIVE EXPERIENCE -->
+
+    <section class="case-section responsive-premium">
+        <div class="case-container">
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2>Responsive Experience</h2>
+                <p class="section-subtitle">
+                    A seamless digital showroom experience designed to adapt
+                    across mobile and desktop platforms while maintaining
+                    clarity, hierarchy, and conversion focus.
+                </p>
+            </div>
+
+            <!-- Main Layout -->
+            <div class="responsive-layout">
+
+                <!-- LEFT: CONTENT -->
+                <div class="responsive-text">
+
+                    <div class="feature-block">
+                        <h4>📱 Mobile Experience</h4>
+                        <ul>
+                            <li>- Sticky bottom CTA for quick test drive booking</li>
+                            <li>- Swipe-enabled vehicle browsing</li>
+                            <li>- Simplified hamburger navigation</li>
+                            <li>- Optimized short inquiry forms</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-block">
+                        <h4>🖥 Desktop Experience</h4>
+                        <ul>
+                            <li>- Mega navigation for structured exploration</li>
+                            <li>- Immersive 16:9 hero banners</li>
+                            <li>- Hover-based vehicle interaction</li>
+                            <li>- Advanced filters and comparison tools</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: VISUALS -->
+                <div class="responsive-visuals">
+
+                    <!-- Desktop Preview (16:9 Ratio) -->
+                    <div class="desktop-mockup">
+                        <div class="ratio-16-9">
+                            <img src="images/skoda-after-model.jpg" alt="Desktop UI Preview">
+                        </div>
+                    </div>
+
+                    <!-- Mobile Preview (Overlapping) -->
+                    <div class="mobile-mockup">
+                        <img src="images/skoda-mobile.png" alt="Mobile UI Preview">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- RESULTS SECTION -->
+    <section class="case-section impact-section">
+        <div class="case-container">
+
+            <div class="impact-header">
+                <h2>Impact & Results</h2>
+                <p>Measured improvements after redesign and optimization.</p>
+            </div>
+
+            <div class="impact-grid">
+
+                <div class="impact-card">
+                    <h3>+35%</h3>
+                    <p>Increase in Test Drive Requests</p>
+                </div>
+
+                <div class="impact-card">
+                    <h3>+28%</h3>
+                    <p>Increase in Time on Model Pages</p>
+                </div>
+
+                <div class="impact-card">
+                    <h3>-22%</h3>
+                    <p>Reduction in Bounce Rate</p>
+                </div>
+
+                <div class="impact-card">
+                    <h3>+18%</h3>
+                    <p>Increase in Lead Form Completions</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="case-cta">
+        <div class="case-container">
+            <h2>Explore the Project</h2>
+
+            <div class="cta-buttons">
+                <a href="https://mahavirskoda.com/" target="_blank" class="secondary-btn">
+                    View Live Website
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; UI UX Designer - Nihith Kollapudi.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nihith-kollapudi"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Nihith19"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
