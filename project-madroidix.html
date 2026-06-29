@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Case Study: Redesigning Madroidix Technologies' corporate tech agency platform. Structuring modular B2B services catalogs and visual project showcases." />
+  <title>Madroidix Technologies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/inner.css" />
+  <link rel="stylesheet" href="css/case-study.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__text">N<span>.</span></div>
+    <div class="loader__bar">
+      <div class="loader__progress"></div>
+    </div>
+  </div>
+
+  <!-- Page Transition -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav__logo">N<span>.</span></a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="experience.html" class="nav__link">Experience</a></li>
+      <li><a href="projects.html" class="nav__link active">Projects</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav__cta">Let's Talk</a>
+    <button class="nav__hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="experience.html" class="nav__link">Experience</a>
+    <a href="projects.html" class="nav__link">Projects</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="nav__cta btn btn-primary">Let's Talk</a>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main class="cs-main" id="main-content">
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- HERO SECTION                              -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-hero" id="case-study-hero">
+      <div class="container">
+        <a href="projects.html" class="cs-hero__back-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back to Projects
+        </a>
+        <span class="cs-hero__tag" style="margin-top: 10px;">Agency Platform Design</span>
+        <h1 class="cs-hero__title">
+          Madroidix Technologies
+        </h1>
+        
+        <div class="cs-hero__meta">
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Client</span>
+            <span class="cs-hero__meta-value">Madroidix Technologies</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Services</span>
+            <span class="cs-hero__meta-value">UX Strategy, Information Architecture, UI Design</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Timeline</span>
+            <span class="cs-hero__meta-value">2025 (4 Weeks)</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Industry</span>
+            <span class="cs-hero__meta-value">Technology Agency &amp; Software Services</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Website</span>
+            <span class="cs-hero__meta-value"><a href="https://madroidix.com/" target="_blank" style="color: var(--gold-dark); font-weight: 600; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px;">madroidix.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></a></span>
+          </div>
+        </div>
+
+        <div class="cs-hero__banner-wrap">
+          <img src="images/Madroidix/Home.png" alt="Madroidix Technologies Agency Homepage UI Mockup" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- NARRATIVE BRIEF & CHALLENGE SECTION       -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--light" id="brief-and-challenge">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Brief</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              <strong>Madroidix Technologies</strong> is a premium custom software engineering and product design agency. The firm delivers high-end digital solutions spanning custom web applications, cloud infrastructure migrations, UI/UX designs, and mobile app developments for growing B2B clients.
+            </p>
+            <p>
+              We were tasked with redesigning their corporate platform, translating their technical software expertise into a highly professional and <strong>modular visual showroom</strong>. The goal was to build a system that presents their diverse dev capabilities clearly, showcases case studies dynamically, and schedules intro consultations with low friction.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-section" style="padding: 60px 0 0 0;">
+          <div class="cs-narrative">
+            <div class="cs-narrative__left">
+              <span class="cs-narrative__label">Challenge</span>
+            </div>
+            <div class="cs-narrative__right">
+              <p>
+                Representing multi-faceted B2B engineering capabilities while streamlining sales discovery scheduling presented complex information architecture barriers:
+              </p>
+              <ol>
+                <li>
+                  <strong>Text-Heavy Consulting Brochures:</strong> Legacy layouts relied on heavy technical jargon lists, overwhelming corporate prospects trying to locate services.
+                </li>
+                <li>
+                  <strong>Static Portfolio Galleries:</strong> Client project grids lacked dynamic storytelling, making it difficult for technical buyers to evaluate past outcomes.
+                </li>
+                <li>
+                  <strong>Consultation Scheduler Friction:</strong> Scheduling discovery calls required navigating to a complex contact page, creating drop-off.
+                </li>
+                <li>
+                  <strong>Inelastic Mobile Cataloging:</strong> Over 50% of corporate buyers explore technical agencies on mobile viewports, yet services layouts lacked responsive structure.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- UX RESEARCH & DISCOVERY SECTION           -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--alt" id="discovery-research">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Discover</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              We initiated the redesign by carrying out <strong>user interviews</strong> with startup founders and enterprise product managers. Participants indicated that case studies showing clear business metrics and modular services listings were their primary trust indicators.
+            </p>
+            <p>
+              Simultaneously, we conducted a <strong>Jakob Nielsen heuristic audit</strong> of legacy corporate tech portals. The audit verified that buried portfolios and multi-field query forms accounted for the majority of visitor bounce rates.
+            </p>
+            
+            <div class="cs-takeaways-box">
+              <h3 class="cs-takeaways-title">Key Discovery Takeaways</h3>
+              <ul>
+                <li>
+                  <strong>Outcome-First Portfolios:</strong> Expose project results and tech stack details directly inside gallery grids.
+                </li>
+                <li>
+                  <strong>Modular Services Tabs:</strong> Organize services (dev, design, cloud) into simple columns for easy scanning.
+                </li>
+                <li>
+                  <strong>Visual Consulting Schedulers:</strong> Replace text contact pages with quick date-picker modals.
+                </li>
+                <li>
+                  <strong>Lightweight Page Load:</strong> Streamline thumbnail assets to prevent mobile page loading bounce.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-showcase-box">
+          <img src="images/Madroidix/Home_wireframe.png" alt="Madroidix Technologies UX Audit and Wireframe Layouts" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- DEFINE STRATEGY SECTION                   -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--light" id="define-strategy">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Define</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              We formulated an information architecture that bridges software consulting with lead conversion. We established five core design pillars:
+            </p>
+            <ol>
+              <li>
+                <strong>Titanium Gray &amp; Warm Gold Guidelines:</strong> A sophisticated, clean visual system (dark titanium elements, warm silver backgrounds, and elegant gold accents) representing premium engineering authority.
+              </li>
+              <li>
+                <strong>Modular Service Catalogs:</strong> Segmenting agency services into clean, interactive sub-sections to prevent text overload.
+              </li>
+              <li>
+                <strong>25+ Reusable Custom UI Components:</strong> Integrating modular service blocks, test schedulers, and pricing grids.
+              </li>
+              <li>
+                <strong>Low-Friction consulting Schedulers:</strong> Constructing quick date-picker overlays requiring minimal form inputs.
+              </li>
+              <li>
+                <strong>Mobile-First Spec Accordions:</strong> Structuring technical specs to stack and collapse gracefully on mobile screens.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- DESIGN SYSTEM & BLUEPRINTS SECTION        -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--alt" id="design-system">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Design</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              We established an elegant typography system, utilizing Cormorant Garamond serif headers to reflect classical agency trust and brand history, contrasted with Space Grotesk labels for an engineered, modern touch.
+            </p>
+            <p>
+              We mapped user consulting funnels, portfolio lists, and services tabs in low-fidelity wireframes before styling the high-fidelity visual showroom.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- USABILITY TESTING SECTION                  -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--light" id="usability-testing">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Usability</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              We ran usability tests with startup founders and product managers to refine B2B navigation paths:
+            </p>
+            <ul>
+              <li>
+                <strong>Services Overload:</strong> Users found scanning technical jargon confusing. We created simple, tabbed category lists to isolate app dev from cloud services.
+              </li>
+              <li>
+                <strong>Portfolio Discovery:</strong> Browsing past projects was tedious. We highlighted outcomes stats right on portfolio cover thumbnails.
+              </li>
+              <li>
+                <strong>Scheduler Friction:</strong> Multi-step scheduling led to bounces. We replaced contact boxes with a single-click calendar popup.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- CORE FEATURE SHOWCASE SIDE-BY-SIDE GRID    -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--alt" id="feature-showcase">
+      <div class="container container--fill">
+        
+        <!-- Feature 1: Homepage Showroom -->
+        <div class="cs-feature-grid">
+          <div class="cs-feature__content">
+            <h2 class="cs-feature__title">Enterprise <em>Agency</em> Showroom</h2>
+            <p class="cs-feature__desc">
+              We redesigned the corporate landing experience to act as a modern B2B entry. Typographic headers, client logos, and modular service cards enable prospective clients to inspect agency credentials instantly.
+            </p>
+          </div>
+          <div class="cs-feature__image-wrap">
+            <img src="images/Madroidix/Home.png" alt="Madroidix Technologies Enterprise Agency Homepage Redesign UI" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Feature 2: Services Catalog -->
+        <div class="cs-feature-grid">
+          <div class="cs-feature__content">
+            <h2 class="cs-feature__title">Modular <em>Services</em> Showcases</h2>
+            <p class="cs-feature__desc">
+              Development, design, and cloud consulting capabilities are organized inside clean tabs and sub-pages (`Services.png`), outlining deliverables and engineering tech stacks clearly.
+            </p>
+          </div>
+          <div class="cs-feature__image-wrap">
+            <img src="images/Madroidix/Services.png" alt="Madroidix Technologies Modular Services Catalog UI" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Feature 3: Case Portfolio -->
+        <div class="cs-feature-grid">
+          <div class="cs-feature__content">
+            <h2 class="cs-feature__title">Dynamic <em>Case</em> Portfolio</h2>
+            <p class="cs-feature__desc">
+              Client case studies and engineering deliverables are presented in a visual grid (`Portfolio.png`), helping tech buyers evaluate past solutions and outcomes metrics easily.
+            </p>
+          </div>
+          <div class="cs-feature__image-wrap">
+            <img src="images/Madroidix/Portfolio.png" alt="Madroidix Technologies Case Studies Portfolio Grid UI" loading="lazy" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- OUTCOMES & CONCLUSION SECTION              -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--light" id="outcomes-conclusion">
+      <div class="container">
+        <div class="cs-conclusion">
+          <h2 class="cs-conclusion__title">Conclusion</h2>
+          <p class="cs-conclusion__desc">
+            By structuring a legacy tech consulting portal into a <strong>high-converting modular agency showroom</strong>, we successfully optimized user engagement. Restructuring services catalogs and reducing scheduler steps built a trustworthy B2B sales environment.
+          </p>
+
+          <div class="cs-faq">
+            <div class="cs-faq__item">
+              <h3 class="cs-faq__question">What did we achieve from the project?</h3>
+              <div class="cs-faq__answer">
+                <p>
+                  The corporate redesign delivered immediate positive performance and business growth metrics:
+                </p>
+                <ul style="list-style: none; padding: 0; margin-top: 16px;">
+                  <li style="margin-bottom: 12px; position: relative; padding-left: 28px; color: var(--mocha);">
+                    <strong style="color: var(--gold-dark); font-family: var(--font-grotesk); font-size: 1.15rem; display: block;">+35% Lead Generation Rate</strong>
+                    Replacing multi-field forms with a single-click calendar scheduler significantly raised intro bookings.
+                  </li>
+                  <li style="margin-bottom: 12px; position: relative; padding-left: 28px; color: var(--mocha);">
+                    <strong style="color: var(--gold-dark); font-family: var(--font-grotesk); font-size: 1.15rem; display: block;">+40% Case Study Read-Throughs</strong>
+                    Outcome-first project cards motivated visitors to read details, increasing portfolio engagement.
+                  </li>
+                  <li style="margin-bottom: 12px; position: relative; padding-left: 28px; color: var(--mocha);">
+                    <strong style="color: var(--gold-dark); font-family: var(--font-grotesk); font-size: 1.15rem; display: block;">-30% Service Bounce Rate</strong>
+                    Organizing tech lists into modular tabs allowed users to scan and locate relevant services easily.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- NEXT CASE STUDY TRANSITION                 -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-nav-strip">
+      <div class="container">
+        <div class="cs-nav-strip__inner">
+          <a href="project-botnbolt.html" class="cs-nav-btn cs-nav-btn--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(180deg);">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            <div>
+              <span class="cs-nav-btn__label">Previous Project</span>
+              <h4 class="cs-nav-btn__title">BotNBolt</h4>
+            </div>
+          </a>
+          
+          <a href="projects.html" class="cs-nav-btn">
+            <div>
+              <span class="cs-nav-btn__label">View Gallery</span>
+              <h4 class="cs-nav-btn__title">All Projects</h4>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- FOOTER                                    -->
+  <!-- ══════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">N<span>.</span></a>
+        <nav class="footer__nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/nihith-kollapudi" target="_blank" class="footer__social"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:kollapudinihith@gmail.com" class="footer__social" aria-label="Email"><i
+              class="fa-regular fa-envelope"></i></a>
+          <a href="https://github.com/nihith19" target="_blank" class="footer__social" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Nihith Kollapudi. All rights reserved.</p>
+        <p class="footer__tagline">"Design is intelligence made visible."</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Case Study: Redesigning Mahavir Skoda's dealership flagship web experience. Restructuring premium automotive discovery with European refined UI and high-converting leads scheduling." />
+  <title>Mahavir Skoda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/inner.css" />
+  <link rel="stylesheet" href="css/case-study.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader__text">N<span>.</span></div>
+    <div class="loader__bar">
+      <div class="loader__progress"></div>
+    </div>
+  </div>
+
+  <!-- Page Transition -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav__logo">N<span>.</span></a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About</a></li>
+      <li><a href="experience.html" class="nav__link">Experience</a></li>
+      <li><a href="projects.html" class="nav__link active">Projects</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav__cta">Let's Talk</a>
+    <button class="nav__hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile">
+    <a href="index.html" class="nav__link">Home</a>
+    <a href="about.html" class="nav__link">About</a>
+    <a href="experience.html" class="nav__link">Experience</a>
+    <a href="projects.html" class="nav__link">Projects</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="nav__cta btn btn-primary">Let's Talk</a>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main class="cs-main" id="main-content">
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- HERO SECTION                              -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-hero" id="case-study-hero">
+      <div class="container">
+        <a href="projects.html" class="cs-hero__back-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back to Projects
+        </a>
+        <span class="cs-hero__tag" style="margin-top: 10px;">Website Redesign</span>
+        <h1 class="cs-hero__title">
+          Mahavir Skoda
+        </h1>
+        
+        <div class="cs-hero__meta">
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Client</span>
+            <span class="cs-hero__meta-value">Mahavir Skoda</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Services</span>
+            <span class="cs-hero__meta-value">UX Strategy, UI Redesign, Conversion Optimization</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Timeline</span>
+            <span class="cs-hero__meta-value">2025 (4 Weeks)</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Industry</span>
+            <span class="cs-hero__meta-value">Automotive Dealership</span>
+          </div>
+          <div class="cs-hero__meta-item">
+            <span class="cs-hero__meta-label">Website</span>
+            <span class="cs-hero__meta-value"><a href="https://mahavirskoda.com" target="_blank" style="color: var(--gold-dark); font-weight: 600; text-decoration: underline; display: inline-flex; align-items: center; gap: 4px;">mahavirskoda.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.7rem;"></i></a></span>
+          </div>
+        </div>
+
+        <div class="cs-hero__banner-wrap">
+          <img src="images/Mahavir/skoda-hero-mockup.jpg" alt="Mahavir Skoda Showcase Mockup" loading="eager" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- NARRATIVE BRIEF & CHALLENGE SECTION       -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--light" id="brief-and-challenge">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Brief</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              <strong>Mahavir Skoda</strong> is the primary dealer representative of Škoda India across Andhra Pradesh and Telangana, representing European automotive refinement and engineering. The dealer showroom is highly regarded for providing high-touch customer consultations.
+            </p>
+            <p>
+              We were tasked with modernizing the dealer's digital flagship experience, aligning it with Škoda's global refined <strong>"Simply Clever" brand philosophy</strong> while structurally optimizing the regional sales funnel. The objective was to create an interface that simplifies vehicle specification analysis and streamlines test-drive scheduling leads.
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-section" style="padding: 60px 0 0 0;">
+          <div class="cs-narrative">
+            <div class="cs-narrative__left">
+              <span class="cs-narrative__label">Challenge</span>
+            </div>
+            <div class="cs-narrative__right">
+              <p>
+                Bridging corporate brand visual compliance with dealer-level commercial lead requirements presented complex UX barriers:
+              </p>
+              <ol>
+                <li>
+                  <strong>Spec-Sheet Information Overwhelm:</strong> Dealership catalogs were cluttered with heavy technical specifications, making it difficult for buyers to compare trims easily.
+                </li>
+                <li>
+                  <strong>Booking Friction Drop-offs:</strong> Scheduling a physical test drive required completing a long 6-step form, creating massive friction during high-intent browsing.
+                </li>
+                <li>
+                  <strong>Inelastic Responsive Grids:</strong> Over 80% of automotive exploration happens on mobile phones, yet the dealer's legacy site did not support fluid side-by-side spec comparison.
+                </li>
+                <li>
+                  <strong>Fragmented After-Sales Transparency:</strong> Authorized maintenance details and accessories costing were hidden under dense tables, prompting users to bounce.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- UX RESEARCH & DISCOVERY SECTION           -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--alt" id="discovery-research">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Discover</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              We initiated the project by carrying out <strong>user interviews</strong> with recent vehicle buyers and Škoda loyalists to identify their top conversion trust metrics. Safety certifications (e.g., 5-Star Global NCAP), cabin refinement parameters, and local dealership service transparency were highlighted as key decision factors.
+            </p>
+            <p>
+              In parallel, we performed a thorough <strong>Jakob Nielsen heuristic audit</strong> of major regional dealer platforms. Our findings confirmed that convoluted leads collection scripts and unclear trim layouts accounted for the majority of drop-offs.
+            </p>
+            
+            <div class="cs-takeaways-box">
+              <h3 class="cs-takeaways-title">Key Discovery Takeaways</h3>
+              <ul>
+                <li>
+                  <strong>Safety Front &amp; Center:</strong> Buyers want safety ratings and build quality specs visible instantly, not hidden in long PDFs.
+                </li>
+                <li>
+                  <strong>Low-Friction Lead Forms:</strong> Simplifying test-drive booking into a fast, 3-step calendar scheduler significantly raises conversions.
+                </li>
+                <li>
+                  <strong>Transparent After-Sales Pricing:</strong> Providing instant service estimate calculators builds local dealer trust.
+                </li>
+                <li>
+                  <strong>Adaptive Comparison Tables:</strong> Mobile screens require horizontal swiping specification columns instead of traditional stacked text sheets.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-showcase-box">
+          <img src="images/Mahavir/skoda-wireframe.png" alt="Mahavir Skoda Heuristic Audit & UX Wireframes" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- DEFINE STRATEGY SECTION                   -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--light" id="define-strategy">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Define</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              We established a design framework that unites Škoda's signature branding with localized conversion hooks. We defined five core visual and structural guidelines:
+            </p>
+            <ol>
+              <li>
+                <strong>Anthracite &amp; Emerald Green Brand Guidelines:</strong> Infusing global Škoda branding (deep premium green highlights, anthracite blocks, and silver grids) into a luxurious neutral canvas.
+              </li>
+              <li>
+                <strong>Virtual Showroom Fahrzeug-Navigation:</strong> Categorizing models cleanly into Sedans, SUVs, and Electric vehicles for fast model comparisons.
+              </li>
+              <li>
+                <strong>3-Step Test-Drive Funnel:</strong> Restructuring the 6-step form into a quick, interactive modal scheduler with predefined date slots.
+              </li>
+              <li>
+                <strong>Transparent Maintenance Calculators:</strong> Helping owners estimate maintenance costs instantly.
+              </li>
+              <li>
+                <strong>Mobile-First Spec Sheets:</strong> Engineering touch-swipe controls to compare engine outputs, safety credentials, and feature trims smoothly.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- DESIGN SYSTEM & BLUEPRINTS SECTION        -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--alt" id="design-system">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Design</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              We designed a highly geometric typographical system, utilizing Cormorant Garamond serif headers to evoke Škoda's rich heritage dating back to 1895, contrasted with Space Grotesk labels for an engineered, precise aesthetic.
+            </p>
+            <p>
+              We mapped structural layouts, vehicle detail models, booking confirmation funnels, and localization details in interactive wireframes before high-fidelity visual composition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- USABILITY TESTING SECTION                  -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--light" id="usability-testing">
+      <div class="container">
+        <div class="cs-narrative">
+          <div class="cs-narrative__left">
+            <span class="cs-narrative__label">Usability</span>
+          </div>
+          <div class="cs-narrative__right">
+            <p>
+              We ran two iterative usability testing cycles with prospective car buyers to refine transaction mechanics:
+            </p>
+            <ul>
+              <li>
+                <strong>Calendar Confusion:</strong> Users were unsure which dates were available. We introduced predefined calendar pills representing popular slots to streamline booking.
+              </li>
+              <li>
+                <strong>Model Trims Clutter:</strong> Comparing variants was taxing. We streamlined trims specs lists into simple side-by-side columns with clean filters.
+              </li>
+              <li>
+                <strong>Location Friction:</strong> Dealers list details were disorganized. We introduced single-tap direct calling and visual Google Map shortcuts.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- CORE FEATURE SHOWCASE SIDE-BY-SIDE GRID    -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--alt" id="feature-showcase">
+      <div class="container container--fill">
+        
+        <!-- Feature 1: Digital Showroom Homepage -->
+        <div class="cs-feature-grid">
+          <div class="cs-feature__content">
+            <h2 class="cs-feature__title">Premium <em>Digital</em> Showroom</h2>
+            <p class="cs-feature__desc">
+              We redesigned the showroom landing page to function as a visual gallery. Vehicles are displayed in high-resolution studio shots with custom glassmorphic overlay specifications, allowing users to analyze key performance metrics immediately.
+            </p>
+          </div>
+          <div class="cs-feature__image-wrap">
+            <img src="images/Mahavir/skoda-before-home.png" alt="Mahavir Skoda Premium Redesigned Digital Showroom UI" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Feature 2: Specifications Explorer -->
+        <div class="cs-feature-grid">
+          <div class="cs-feature__content">
+            <h2 class="cs-feature__title">Interactive <em>Model</em> Explorer</h2>
+            <p class="cs-feature__desc">
+              A simplified specifications table allowing buyers to evaluate and compare various trims (Active, Ambition, Style, L&amp;K) side-by-side. Specs elements scale fluidly to secure full legibility on wide desktop screens.
+            </p>
+          </div>
+          <div class="cs-feature__image-wrap">
+            <img src="images/Mahavir/skoda-after-model.jpg" alt="Mahavir Skoda Model Specification Redesign UI" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Feature 3: Responsive Dealership Floor -->
+        <div class="cs-feature-grid">
+          <div class="cs-feature__content">
+            <h2 class="cs-feature__title">Ergonomic <em>Mobile</em> Catalog</h2>
+            <p class="cs-feature__desc">
+              Since 80%+ automotive buyers browse dealerships on mobile viewports, we built mobile-optimized specifications cards, floating quick-call drawers, and persistent test-drive scheduling tabs for easy tap navigation.
+            </p>
+          </div>
+          <div class="cs-feature__image-wrap cs-feature__image-wrap--mobile">
+            <img src="images/Mahavir/skoda-mobile.png" alt="Mahavir Skoda Mobile Responsive Dealership Catalog UI" loading="lazy" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- OUTCOMES & CONCLUSION SECTION              -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-section cs-section--light" id="outcomes-conclusion">
+      <div class="container">
+        <div class="cs-conclusion">
+          <h2 class="cs-conclusion__title">Conclusion</h2>
+          <p class="cs-conclusion__desc">
+            By modernizing a legacy automotive dealer portal into a <strong>high-converting flagship showroom</strong>, we bridged Škoda's European brand prestige with highly optimized local lead generation funnels. Stripping out booking friction and exposing transparent specifications built a trustworthy online dealership environment.
+          </p>
+
+          <div class="cs-faq">
+            <div class="cs-faq__item">
+              <h3 class="cs-faq__question">What did we achieve from the project?</h3>
+              <div class="cs-faq__answer">
+                <p>
+                  The dealership redesign delivered immediate positive performance and business growth metrics:
+                </p>
+                <ul style="list-style: none; padding: 0; margin-top: 16px;">
+                  <li style="margin-bottom: 12px; position: relative; padding-left: 28px; color: var(--mocha);">
+                    <strong style="color: var(--gold-dark); font-family: var(--font-grotesk); font-size: 1.15rem; display: block;">+35% Test-Drive Bookings</strong>
+                    Reducing the calendar booking funnel from 6 steps to 3 quick steps dramatically lowered lead drop-offs.
+                  </li>
+                  <li style="margin-bottom: 12px; position: relative; padding-left: 28px; color: var(--mocha);">
+                    <strong style="color: var(--gold-dark); font-family: var(--font-grotesk); font-size: 1.15rem; display: block;">+45% Mobile Variant Engagement</strong>
+                    Responsive model swipers allowed mobile users to compare engine displacements and trim specs easily.
+                  </li>
+                  <li style="margin-bottom: 12px; position: relative; padding-left: 28px; color: var(--mocha);">
+                    <strong style="color: var(--gold-dark); font-family: var(--font-grotesk); font-size: 1.15rem; display: block;">-25% Service Estimate Bounce</strong>
+                    Transparent, authorization-backed maintenance calculator pages successfully retained current car owners.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════ -->
+    <!-- NEXT CASE STUDY TRANSITION                 -->
+    <!-- ══════════════════════════════════════════ -->
+    <section class="cs-nav-strip">
+      <div class="container">
+        <div class="cs-nav-strip__inner">
+          <a href="project-alanati.html" class="cs-nav-btn cs-nav-btn--prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(180deg);">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+            <div>
+              <span class="cs-nav-btn__label">Previous Project</span>
+              <h4 class="cs-nav-btn__title">Alanati Pindivantalu</h4>
+            </div>
+          </a>
+          
+          <a href="project-botnbolt.html" class="cs-nav-btn">
+            <div>
+              <span class="cs-nav-btn__label">Next Project</span>
+              <h4 class="cs-nav-btn__title">BotNBolt</h4>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- FOOTER                                    -->
+  <!-- ══════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">N<span>.</span></a>
+        <nav class="footer__nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/nihith-kollapudi" target="_blank" class="footer__social"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:kollapudinihith@gmail.com" class="footer__social" aria-label="Email"><i
+              class="fa-regular fa-envelope"></i></a>
+          <a href="https://github.com/nihith19" target="_blank" class="footer__social" aria-label="GitHub"><i
+              class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Nihith Kollapudi. All rights reserved.</p>
+        <p class="footer__tagline">"Design is intelligence made visible."</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

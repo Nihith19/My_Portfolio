@@ -1,0 +1,579 @@
+/* ==========================================================================
+   CASE STUDY — LOLLYPOP & ZINNOV INSPIRED LAYOUTS (LUXURY BRANDING)
+   ========================================================================== */
+
+/* ─── Page Containers & Spacing ────────────────────────────────────────── */
+.cs-main {
+  background-color: var(--cream) !important;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+.cs-section {
+  padding: 40px 0;
+  position: relative;
+}
+
+.cs-section--light {
+  background-color: var(--cream);
+}
+
+.cs-section--alt {
+  background-color: var(--warm-white);
+  border-top: 1px solid var(--linen);
+  border-bottom: 1px solid var(--linen);
+}
+
+/* ─── Hero Banner ──────────────────────────────────────────────────────── */
+.cs-hero {
+  padding: 100px 0 30px 0;
+  position: relative;
+  background-color: var(--cream);
+}
+
+.cs-hero__back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-grotesk);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mocha);
+  font-weight: 600;
+  margin-bottom: 24px;
+  transition: color var(--duration) var(--transition), transform var(--duration) var(--transition);
+  text-decoration: none;
+}
+
+.cs-hero__back-btn:hover {
+  color: var(--gold-dark);
+  transform: translateX(-4px);
+}
+
+.cs-hero__back-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2.5;
+}
+
+.cs-hero__tag {
+  display: block;
+  font-family: var(--font-grotesk);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gold-dark);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.cs-hero__title {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  line-height: 1.15;
+  color: var(--espresso);
+  margin-bottom: 32px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  max-width: 1000px;
+}
+
+.cs-hero__title em {
+  font-style: italic;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--gold);
+}
+
+.cs-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid var(--linen);
+  padding-bottom: 24px;
+}
+
+.cs-hero__meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cs-hero__meta-label {
+  font-family: var(--font-grotesk);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--mocha);
+  font-weight: 600;
+}
+
+.cs-hero__meta-value {
+  font-size: 0.95rem;
+  color: var(--espresso);
+  font-weight: 500;
+}
+
+.cs-hero__banner-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--linen);
+  background-color: var(--white);
+  transition: transform 0.6s var(--transition);
+}
+
+.cs-hero__banner-wrap:hover {
+  transform: translateY(-8px);
+}
+
+.cs-hero__banner-wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ─── UX Process Narrative (Brief, Challenge, Discover) ────────────────── */
+.cs-narrative {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.cs-narrative__left {
+  position: sticky;
+  top: 120px;
+}
+
+.cs-narrative__label {
+  font-family: var(--font-grotesk);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold-dark);
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.cs-narrative__label::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--gold);
+}
+
+.cs-narrative__right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cs-narrative__right p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--mocha);
+}
+
+.cs-narrative__right p strong {
+  color: var(--espresso);
+  font-weight: 600;
+}
+
+.cs-narrative__right ul,
+.cs-narrative__right ol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.cs-narrative__right ul li,
+.cs-narrative__right ol li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--mocha);
+  position: relative;
+  padding-left: 28px;
+}
+
+.cs-narrative__right ul li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.95rem;
+}
+
+.cs-narrative__right ol {
+  counter-reset: narrative-counter;
+}
+
+.cs-narrative__right ol li {
+  counter-increment: narrative-counter;
+}
+
+.cs-narrative__right ol li::before {
+  content: counter(narrative-counter) '.';
+  position: absolute;
+  left: 0;
+  color: var(--gold-dark);
+  font-weight: 700;
+  font-family: var(--font-grotesk);
+}
+
+.cs-narrative__right ol li strong,
+.cs-narrative__right ul li strong {
+  color: var(--espresso);
+  font-weight: 600;
+}
+
+.cs-takeaways-box {
+  background-color: var(--warm-white);
+  border: 1px solid var(--linen);
+  border-left: 4px solid var(--gold);
+  border-radius: 12px;
+  padding: 32px;
+  margin-top: 24px;
+}
+
+.cs-takeaways-title {
+  font-family: var(--font-grotesk);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--espresso);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* ─── Showcase Elements (Wireframes, Priority boards) ──────────────────── */
+.cs-showcase-box {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--linen);
+  background-color: var(--white);
+  transition: transform 0.6s var(--transition);
+}
+
+.cs-showcase-box:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.cs-showcase-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container--fill {
+  max-width: 1440px !important;
+  width: 100%;
+}
+
+/* ─── Premium Features Showcase (Side-by-side layout) ──────────────────── */
+.cs-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 60px;
+}
+
+.cs-feature__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 150px;
+  align-self: start;
+}
+
+.cs-feature__title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  line-height: 1.2;
+  color: var(--espresso);
+  font-weight: 500;
+}
+
+.cs-feature__title em {
+  font-style: italic;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--gold);
+}
+
+.cs-feature__desc {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--mocha);
+}
+
+.cs-feature__desc strong {
+  color: var(--espresso);
+  font-weight: 600;
+}
+
+.cs-feature__image-wrap {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--linen);
+  background-color: var(--white);
+  transition: transform 0.6s var(--transition), box-shadow 0.6s var(--transition);
+}
+
+.cs-feature__image-wrap:hover {
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.cs-feature__image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cs-feature__image-wrap--home {
+  max-width: 85%;
+  margin-left: 0;
+}
+
+.cs-feature__image-wrap--mobile {
+  max-width: 45%;
+  margin-left: 0;
+}
+
+/* ─── Outcomes / Conclusion Block ──────────────────────────────────────── */
+.cs-conclusion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cs-conclusion__title {
+  font-family: var(--font-serif);
+  font-size: 2.8rem;
+  color: var(--espresso);
+  margin-bottom: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cs-conclusion__desc {
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: var(--mocha);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.cs-conclusion__desc strong {
+  color: var(--espresso);
+}
+
+.cs-faq {
+  background-color: var(--white);
+  border: 1px solid var(--linen);
+  border-radius: 24px;
+  padding: 48px;
+  box-shadow: var(--shadow-soft);
+}
+
+.cs-faq__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cs-faq__question {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--espresso);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.cs-faq__answer {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--mocha);
+}
+
+.cs-faq__answer strong {
+  color: var(--espresso);
+}
+
+/* ─── Pagination / Next Project Navigation ────────────────────────────── */
+.cs-nav-strip {
+  border-top: 1px solid var(--linen);
+  padding: 60px 0;
+  background-color: var(--warm-white);
+}
+
+.cs-nav-strip__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cs-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform var(--duration) var(--transition);
+}
+
+.cs-nav-btn:hover {
+  transform: translateX(6px);
+}
+
+.cs-nav-btn--prev:hover {
+  transform: translateX(-6px);
+}
+
+.cs-nav-btn__label {
+  font-family: var(--font-grotesk);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--mocha);
+  font-weight: 600;
+  display: block;
+}
+
+.cs-nav-btn__title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  color: var(--espresso);
+  font-weight: 500;
+  margin-top: 4px;
+  transition: color var(--duration);
+}
+
+.cs-nav-btn:hover .cs-nav-btn__title {
+  color: var(--gold-dark);
+}
+
+.cs-nav-btn svg {
+  width: 24px;
+  height: 24px;
+  color: var(--gold);
+  transition: transform var(--duration) var(--transition);
+}
+
+.cs-nav-btn:hover svg {
+  transform: translateX(4px);
+}
+
+.cs-nav-btn--prev:hover svg {
+  transform: translateX(-4px);
+}
+
+/* ─── Responsive Queries ───────────────────────────────────────────────── */
+@media (max-width: 992px) {
+  .cs-hero__title {
+    font-size: 3.2rem;
+  }
+
+  .cs-narrative {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cs-narrative__left {
+    position: relative;
+    top: 0;
+  }
+
+  .cs-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 20px;
+  }
+
+  .cs-feature__image-wrap {
+    margin-bottom: 0;
+  }
+
+  .cs-feature__image-wrap--home {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .cs-feature__image-wrap--mobile {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-section {
+    padding: 40px 0;
+  }
+
+  .cs-hero {
+    padding: 120px 0 20px 0;
+  }
+
+  .cs-hero__title {
+    font-size: 2.4rem;
+  }
+
+  .cs-hero__meta {
+    gap: 20px;
+  }
+
+  .cs-faq {
+    padding: 32px 24px;
+  }
+
+  .cs-faq__question {
+    font-size: 1.5rem;
+  }
+
+  .cs-conclusion__title {
+    font-size: 2.2rem;
+  }
+
+  .cs-feature__title {
+    font-size: 1.8rem;
+  }
+
+  .cs-feature__image-wrap {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-hero__title {
+    font-size: 2rem;
+  }
+
+  .cs-hero__meta {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cs-nav-strip__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+}
